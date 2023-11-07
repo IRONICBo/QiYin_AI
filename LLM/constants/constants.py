@@ -1,0 +1,6 @@
+
+
+
+# log level
+LOG_LEVEL_INFO = "INFO"
+LOG_LEVEL_DEBUG = "DEBUG"
