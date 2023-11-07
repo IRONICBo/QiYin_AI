@@ -25,3 +25,33 @@
 - TF-IDF(Basic Model)
 
 ### 运行（大模型 & AI）
+
+##### Langchain & Milvus
+
+1. 启动Milvus集群
+```bash
+cd deploy
+docker-compose -f docker-compose.yml up -d
+```
+
+2. 更新配置文件
+```bash
+vi config.yaml
+```
+
+3. 安装依赖
+```bash
+pip install -r requirements.txt
+```
+
+5. 启动大模型服务Vicuna 7B
+```bash
+cd llm
+python main.py
+```
+
+6. 启动API服务
+```bash
+# 根目录下面
+python main.py 
+```
